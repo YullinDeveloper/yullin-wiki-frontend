@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#homeWrap {
+    width: 880px;
+    margin: 0 auto;
+}
+#headerWrap {
+    margin: 0 auto;
+    width: 800px;
+    padding: 80px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(248, 236, 234, 1);
+}
+#header {
+    background-color: #B32020;
+    width: 100%;  
+}
+#headerWrap > p {
+    color: rgba(248, 236, 234, 1);
+    transform: translateY(5px);
+}
+#headerWrap > a {
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    text-decoration: none;
+    color: rgba(248, 236, 234, 1);
+    border: 1px solid rgba(248, 236, 234, 1);
+    border-radius: 100px;
+    padding: 7px 10px;
+}
+#headerWrap > a:hover {
+    color: #B32020;
+    border: 1px solid #B32020;
+    background-color: rgba(248, 236, 234, 1);
+}
+.mainWrap {
+    height: 600px;
+    background: url(/public/images/main_img.svg) no-repeat center bottom ;
+    background-color: #B32020;
+    border-radius: 0 0 50px 50px;
+}
+.mainWrap .m1 {
+    padding-top: 70px;
+}
+.mainWrap .m1 .icon {
+    padding-left: 50%;
+    transform: translateX(-69px);
+
+}
+.mainWrap .m1 .text {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #fff;
+}
+.mainWrap .m1 .text h1 {
+    font-family: "Pretendard";
+    display: inline-block;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 22px;
+    padding-bottom: 25px;
+}
+.mainWrap .m1 .text p {
+    font-family: "Pretendard";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.mainWrap .m1 .search{
+    text-align: center;
+}
+.mainWrap .m1 .search input {
+    width: 60%;
+    height: 52px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 100px;
+    border: none;
+    gap: 10px;
+    font-size: 22px;
+    color: #B32020;
+    font-weight: 200;
+    position: relative;
+}
+.mainWrap .m1 .search input::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image: url(../../images/search_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainWrap .m1 .search input:focus {
+    outline: 2px solid #B32020;
+    font-weight: 200;
+}
+.mainWrap .m1 .search input::-webkit-input-placeholder {
+    color:#B32020;
+    font-weight: 200;
+}

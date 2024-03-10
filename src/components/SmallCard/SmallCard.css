@@ -1,0 +1,9 @@
+#smallCard{
+    display: block;
+    width:85px;
+    height:85px;
+    padding:5px;
+    border-radius:10px;
+    gap:7px;
+    background-color: rgba(246, 245, 244, 1);
+}
