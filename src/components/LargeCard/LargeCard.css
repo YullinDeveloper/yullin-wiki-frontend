@@ -1,0 +1,48 @@
+.largeCard{
+    display: inline-block;
+    background-color: rgba(246, 245, 244, 1);
+    padding: 25px, 30px, 25px, 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+    width: 425px;
+    height: 255px;
+    gap: 15px;
+}
+.largeCard h1 {
+    font-family: "Pretendard";
+    color: rgba(0,0,0,1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    width: 277px;
+    height: 27px;
+    text-align: left;
+}
+.largeCard h2 {
+    font-family: "Pretendard";
+    color: rgba(139, 102, 102, 1);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    width: 107px;
+    height: 14px;
+    text-align: left;
+}
+.largeCard p {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-height: 63px; /* 3줄 * 21px (line-height) */
+    overflow: hidden;
+    white-space: normal; /* nowrap 대신 normal 사용 */
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+}
+.largeCard .tagWrapper {
+    margin: 10px 0px 20px 0;
+}
