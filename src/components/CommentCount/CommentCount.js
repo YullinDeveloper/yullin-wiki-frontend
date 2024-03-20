@@ -1,9 +1,9 @@
 import React from 'react';
-import './CommentCount.css';
+import { CommentCountStyle } from './style';
 import PropTypes from 'prop-types';
 
 const CommentCount = ({ commentCount }) => {
-  return <div className="commentCount">{commentCount}</div>;
+  return <CommentCountStyle>{commentCount}</CommentCountStyle>;
 };
 
 CommentCount.propTypes = {

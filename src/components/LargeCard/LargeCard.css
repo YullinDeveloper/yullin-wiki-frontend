@@ -1,48 +1,87 @@
-.largeCard{
+.card {
     display: inline-block;
     background-color: rgba(246, 245, 244, 1);
-    padding: 25px, 30px, 25px, 30px;
+    padding: 25px 30px 25px 30px;
     border-radius: 20px;
-    justify-content: space-between;
     width: 425px;
     height: 255px;
-    gap: 15px;
 }
-.largeCard h1 {
+
+.card .boxOne,
+.card .boxTwo,
+.card .boxThree {
+    display: flex;
+}
+
+.card .titleBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card h1,
+.card h2,
+.card p {
     font-family: "Pretendard";
-    color: rgba(0,0,0,1);
+    text-align: left;
+}
+
+.card h1 {
+    color: rgba(0, 0, 0, 1);
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
-    width: 277px;
-    height: 27px;
-    text-align: left;
+    margin: 0;
 }
-.largeCard h2 {
-    font-family: "Pretendard";
+
+.card h2 {
     color: rgba(139, 102, 102, 1);
     font-size: 13px;
     font-weight: 300;
-    line-height: 14px;
-    width: 107px;
-    height: 14px;
-    text-align: left;
+    margin: 0;
 }
-.largeCard p {
-    font-family: "Pretendard";
+
+.card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    max-height: 63px; /* 3줄 * 21px (line-height) */
+    max-height: 84px;
     overflow: hidden;
-    white-space: normal; /* nowrap 대신 normal 사용 */
-    -webkit-line-clamp: 4;
     text-overflow: ellipsis;
+    padding-right: 0 5px;
+    margin-right: 0 5px;
+    box-sizing: border-box;
 }
-.largeCard .tagWrapper {
+
+.card .tagWrapper,
+.card .commentCountWrapper,
+.card .categoryWrapper {
     margin: 10px 0px 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.card .tagWrapper {
+    justify-content: flex-start;
+}
+
+.card .commentCountWrapper,
+.card .categoryWrapper {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.card .tag {
+    background-color: rgba(232, 236, 208, 1);
+    padding: 3px 4px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tag:after {
+    content: "";
 }

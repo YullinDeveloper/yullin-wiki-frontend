@@ -7,27 +7,33 @@ import PropTypes from 'prop-types';
 
 const LargeCard = props => {
   return (
-    <div className="largeCard">
-      <header>
-        <h1>
-          {props.title}
-          <div className="categoryWrapper" id="right">
-            <Category category={props.category}></Category>
-          </div>
-        </h1>
-      </header>
-      <h2>
-        {props.date} {props.adminName}
-      </h2>
-      <div className="tagWrapper">
-        <Tag tag={props.tag}></Tag>
+    <div className="card">
+      <div className="boxOne">
+        <div className="titleBox">
+          <h1>{props.title}</h1>
+          <h2>
+            {props.date} {props.adminName}
+          </h2>
+        </div>
+        <div className="categoryWrapper" id="right">
+          <Category category={props.category}></Category>
+        </div>
       </div>
-      <div className="commentCountWrapper">
-        <CommentCount commentCount={props.commentCount}></CommentCount>
+      <div className="boxTwo">
+        <div className="tagWrapper">
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+        </div>
+        <div className="commentCountWrapper">
+          <CommentCount commentCount={props.commentCount}></CommentCount>
+        </div>
       </div>
-      <section>
+      <div className="boxThree">
         <p>{props.desc}</p>
-      </section>
+      </div>
     </div>
   );
 };

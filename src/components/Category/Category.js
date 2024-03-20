@@ -1,9 +1,9 @@
 import React from 'react';
-import './Category.css';
+import { CategoryStyle } from './style';
 import PropTypes from 'prop-types';
 
 const Category = ({ category }) => {
-  return <div className="category">{category}</div>;
+  return <CategoryStyle>{category}</CategoryStyle>;
 };
 
 Category.propTypes = {
