@@ -83,7 +83,7 @@
     border-radius: 100px;
     border: none;
     gap: 10px;
-    font-size: 22px;
+    font-size: 18px;
     color: #B32020;
     font-weight: 200;
     position: relative;
@@ -95,7 +95,7 @@
     width: 20px;
     height: 20px;
     content: "";
-    background-image: url(../../images/search_icon.svg);
+    background-image: url(/public/images/search_icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

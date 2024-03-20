@@ -1,18 +1,17 @@
 import React from 'react';
-import './MediumCard.css';
 import Tag from '../Tag/Tag';
-import './MediumCard.css';
+import { TagWrapper, MCardHeader, MCardCont, MediumCardStyle } from './style';
 
 // eslint-disable-next-line react/prop-types
 const MediumCard = ({ header, desc }) => {
   return (
-    <div className="mediumCard">
-      <h1>{header}</h1>
-      <div className="tagWrapper">
+    <MediumCardStyle>
+      <MCardHeader>{header}</MCardHeader>
+      <TagWrapper>
         <Tag tag={'태그1'} />
-      </div>
-      <p>{desc}</p>
-    </div>
+      </TagWrapper>
+      <MCardCont>{desc}</MCardCont>
+    </MediumCardStyle>
   );
 };
 

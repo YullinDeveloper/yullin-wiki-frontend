@@ -1,13 +1,12 @@
 import React from 'react';
-import './SmallCard.css';
-import { Link } from 'react-router-dom';
+import { SmallCardStyle, SCardSpan, SCardSpanHeader } from './style';
 
 const SmallCard = () => {
   return (
-    <Link id="smallCard" href="#">
-      <span>dd</span>
-      <h1>dd</h1>
-    </Link>
+    <SmallCardStyle href="#">
+      <SCardSpan>열린교회</SCardSpan>
+      <SCardSpanHeader>공식페이지</SCardSpanHeader>
+    </SmallCardStyle>
   );
 };
 
