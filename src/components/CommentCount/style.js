@@ -4,7 +4,6 @@ export const CommentCountStyle = styled.div`
   position: relative;
   width: 30px;
   background: rgba(217, 177, 177, 1);
-  font-family: Pretendard;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0px;

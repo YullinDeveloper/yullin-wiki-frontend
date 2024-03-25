@@ -1,5 +1,14 @@
 import React from 'react';
-import './LargeCard.css';
+import {
+  CardStyle,
+  BoxStyle,
+  TitleBoxStyle,
+  Heading1Style,
+  Heading2Style,
+  ParagraphStyle,
+  WrapperStyle,
+  TagStyle,
+} from './style';
 import Tag from '../Tag/Tag.js';
 import Category from '../Category/Category.js';
 import CommentCount from '../CommentCount/CommentCount.js';
@@ -7,34 +16,44 @@ import PropTypes from 'prop-types';
 
 const LargeCard = props => {
   return (
-    <div className="card">
-      <div className="boxOne">
-        <div className="titleBox">
-          <h1>{props.title}</h1>
-          <h2>
+    <CardStyle>
+      <BoxStyle>
+        <TitleBoxStyle>
+          <Heading1Style>{props.title}</Heading1Style>
+          <Heading2Style>
             {props.date} {props.adminName}
-          </h2>
-        </div>
-        <div className="categoryWrapper" id="right">
+          </Heading2Style>
+        </TitleBoxStyle>
+        <WrapperStyle className="categoryWrapper" id="right">
           <Category category={props.category}></Category>
-        </div>
-      </div>
-      <div className="boxTwo">
-        <div className="tagWrapper">
-          <Tag tag={props.tag}></Tag>
-          <Tag tag={props.tag}></Tag>
-          <Tag tag={props.tag}></Tag>
-          <Tag tag={props.tag}></Tag>
-          <Tag tag={props.tag}></Tag>
-        </div>
-        <div className="commentCountWrapper">
+        </WrapperStyle>
+      </BoxStyle>
+      <BoxStyle>
+        <WrapperStyle className="tagWrapper">
+          <TagStyle>
+            <Tag tag={props.tag}></Tag>
+          </TagStyle>
+          <TagStyle>
+            <Tag tag={props.tag}></Tag>
+          </TagStyle>
+          <TagStyle>
+            <Tag tag={props.tag}></Tag>
+          </TagStyle>
+          <TagStyle>
+            <Tag tag={props.tag}></Tag>
+          </TagStyle>
+          <TagStyle>
+            <Tag tag={props.tag}></Tag>
+          </TagStyle>
+        </WrapperStyle>
+        <WrapperStyle className="commentCountWrapper">
           <CommentCount commentCount={props.commentCount}></CommentCount>
-        </div>
-      </div>
-      <div className="boxThree">
-        <p>{props.desc}</p>
-      </div>
-    </div>
+        </WrapperStyle>
+      </BoxStyle>
+      <BoxStyle className="boxThree">
+        <ParagraphStyle>{props.desc}</ParagraphStyle>
+      </BoxStyle>
+    </CardStyle>
   );
 };
 
