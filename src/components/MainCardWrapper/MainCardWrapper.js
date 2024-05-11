@@ -6,7 +6,7 @@ import { MainCardWrapperStyle, MainCardWrapperDesc } from './style';
 const MainCardWrapper = () => {
   return (
     <MainCardWrapperStyle>
-      <MainCardWrapperDesc>열린교회에 대해 더 알고 싶다면?</MainCardWrapperDesc>
+      <MainCardWrapperDesc></MainCardWrapperDesc>
       <MediumCard
         header={'제목입니다.'}
         desc={

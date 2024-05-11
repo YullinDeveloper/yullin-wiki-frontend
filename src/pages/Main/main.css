@@ -41,7 +41,7 @@
 }
 .mainWrap {
     height: 600px;
-    background: url(/public/images/main_img.svg) no-repeat center bottom ;
+    background: url(/src/images/main_img.svg) no-repeat center bottom ;
     background-color: #B32020;
     border-radius: 0 0 50px 50px;
 }
@@ -95,9 +95,7 @@
     width: 20px;
     height: 20px;
     content: "";
-    background-image: url(/public/images/search_icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(/src/images/search_icon.svg) no-repeat center bottom ;
     background-size: cover;
 }
 .mainWrap .m1 .search input:focus {

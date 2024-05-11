@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import './main.css';
 import MainCardWrapper from '../../components/MainCardWrapper/MainCardWrapper';
-import SmallCard from '../../components/SmallCard/SmallCard';
+import SmallCardWrapper from '../../components/SmallCardWrapper/SmallCardWrapper';
 
 const Main = () => {
   return (
@@ -27,9 +27,7 @@ const Main = () => {
               <input type="search" placeholder="열린교회의 크고 작은 이야기" />
             </div>
           </div>
-          <div className="m2">
-            <SmallCard></SmallCard>
-          </div>
+          <SmallCardWrapper></SmallCardWrapper>
         </div>
         <MainCardWrapper></MainCardWrapper>
       </div>

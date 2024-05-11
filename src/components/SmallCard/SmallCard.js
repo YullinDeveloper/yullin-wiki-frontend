@@ -1,11 +1,13 @@
 import React from 'react';
-import { SmallCardStyle, SCardSpan, SCardSpanHeader } from './style';
+import { SmallCardStyle, SCardSpan, SCardSpanHeader, SCardIcon } from './style';
 
-const SmallCard = () => {
+// eslint-disable-next-line react/prop-types
+const SmallCard = ({ span, spanHeader, imageUrl }) => {
   return (
     <SmallCardStyle href="#">
-      <SCardSpan>열린교회</SCardSpan>
-      <SCardSpanHeader>공식페이지</SCardSpanHeader>
+      <SCardSpan>{span}</SCardSpan>
+      <SCardSpanHeader>{spanHeader}</SCardSpanHeader>
+      <SCardIcon src={imageUrl}></SCardIcon>
     </SmallCardStyle>
   );
 };

@@ -33,3 +33,8 @@ export const SCardSpanHeader = styled.p`
   color: rgba(179, 32, 32, 1);
   display: block;
 `;
+export const SCardIcon = styled.img`
+  width: 18px;
+  height: 18px;
+  margin: 7px 27.5px;
+`;
