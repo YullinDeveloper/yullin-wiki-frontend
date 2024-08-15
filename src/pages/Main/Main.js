@@ -31,12 +31,6 @@ const Main = () => {
         </div>
         <MainCardWrapper></MainCardWrapper>
       </div>
-      <footer>
-        <div className="footer-wrap">
-          <div className="footer-info"></div>
-          <div className="footer-contents"></div>
-        </div>
-      </footer>
     </div>
   );
 };

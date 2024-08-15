@@ -7,7 +7,6 @@ import {
 } from './style';
 import SmallCard from '../SmallCard/SmallCard';
 
-// eslint-disable-next-line react/prop-types
 const SmallCardWrapper = () => {
   return (
     <SmallCardWrap>
