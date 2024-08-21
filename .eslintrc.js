@@ -22,12 +22,13 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+    "react/prop-types": "off",
     indent: ['error', 2],
     'linebreak-style': 0,
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-extra-semi': 'error',
     'no-tabs': ['error', { allowIndentationTabs: true }],
-    'prettier/prettier': ['error', { endOfLine: 'auto',useTabs: false }],
+    'prettier/prettier': ['error', { endOfLine: 'auto', useTabs: false }],
   },
 };

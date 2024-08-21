@@ -3,6 +3,7 @@ import React from 'react';
 import './main.css';
 import MainCardWrapper from '../../components/MainCardWrapper/MainCardWrapper';
 import SmallCardWrapper from '../../components/SmallCardWrapper/SmallCardWrapper';
+import LargeCard from '../../components/LargeCard/LargeCard.jsx';
 
 const Main = () => {
   return (
@@ -30,6 +31,15 @@ const Main = () => {
           <SmallCardWrapper></SmallCardWrapper>
         </div>
         <MainCardWrapper></MainCardWrapper>
+        <LargeCard
+          title="게시물 제목"
+          date="2024.03.10"
+          adminName="김땡땡"
+          category="⛪️ 공간"
+          commentCount="3"
+          desc="게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용 게시물 내용"
+          tag="태그1"
+        ></LargeCard>
       </div>
     </div>
   );
