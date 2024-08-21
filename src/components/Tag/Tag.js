@@ -1,9 +1,13 @@
 import React from 'react';
-import { TagStyle } from './style';
+import './Tag.css';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Tag = ({ tag }) => {
-  return <TagStyle>{tag}</TagStyle>;
+  return <div className="tag">{tag}</div>;
+};
+
+Tag.propTypes = {
+  tag: PropTypes.string.isRequired,
 };
 
 export default Tag;

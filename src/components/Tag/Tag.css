@@ -1,0 +1,11 @@
+.tagWrapper {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgba(128, 143, 68, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: right;
+}
