@@ -1,0 +1,99 @@
+#footer {
+    background-color: #B32020;
+    height: 382px;
+    display: flex;
+}
+#footerWrap {
+    margin: 0 auto;
+    width: 880px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-info {
+    font-weight: 700;
+}
+
+.icon {
+    display: flex;
+    min-width: 260px;
+}
+.icon img {
+    display: block;
+    height: 60px;
+}
+.icon p {
+    color: #F8ECEA;
+    font-weight: 900;
+    font-size: 30px;
+    display: block;
+    margin-left: 20px;
+}
+.icon p span {
+    display: block;
+    padding-top: 13px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.copyright {
+    padding-top: 90px;
+}
+.copyright span {
+    color: #F8ECEA;
+    font-weight: 300;
+    font-size: 15px;
+}
+.footer-contents {
+    color: #F8ECEA;
+    height: 166px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 55px;
+}
+.category p {
+    font-size: 14px;
+    font-weight: 300;
+    min-width: 100px;
+    padding-bottom: 25px;
+}
+.contact-us p {
+    font-size: 14px;
+    font-weight: 300;
+    min-width: 250px;
+    padding-bottom: 25px;
+}
+
+.SNS {
+    min-width: 85px;
+}
+.SNS div {
+    display: flex;
+    justify-content: space-between;
+}
+.SNS div a {
+    width: 24px;
+
+}
+.SNS div a .youtube_icon {
+    margin-top: -3px;
+    height: 30px;
+}
+.address-info {
+    color: #F8ECEA;
+}
+.address-info p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.address-info p span {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+.footer-title {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding-bottom: 25px;
+}

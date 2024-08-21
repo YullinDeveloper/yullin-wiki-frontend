@@ -1,9 +1,11 @@
 import React from 'react';
+//import Header from '../components/Header/Header.js';
 import LargeCard from '../components/LargeCard/LargeCard.js';
 
 const Main = () => {
   return (
     <div>
+      {/* <Header></Header> */}
       <LargeCard
         title="게시물 제목"
         date="2024.03.10"

@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
   overrides: [
     {
       env: {
@@ -28,6 +28,6 @@ module.exports = {
     semi: ['error', 'always'],
     'no-extra-semi': 'error',
     'no-tabs': ['error', { allowIndentationTabs: true }],
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'prettier/prettier': ['error', { endOfLine: 'auto',useTabs: false }],
   },
 };
