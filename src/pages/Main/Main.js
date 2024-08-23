@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import './main.css';
+import './Main.css';
 import MainCardWrapper from '../../components/MainCardWrapper/MainCardWrapper';
 import SmallCardWrapper from '../../components/SmallCardWrapper/SmallCardWrapper';
 import LargeCard from '../../components/LargeCard/LargeCard.jsx';
