@@ -17,6 +17,7 @@
 }
 .mediumcard-tag-wrapper {
     margin: 10px 0px 20px 0;
+    gap: 10px;
 }
 .mediumcard-cont {
     font-family: 'Pretendard';

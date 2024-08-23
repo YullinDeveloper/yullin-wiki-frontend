@@ -24,21 +24,11 @@ const LargeCard = props => {
       </div>
       <div className={styles['box-style']}>
         <div className={`${styles['wrapper-style']} ${styles['tag-wrapper']}`}>
-          <div className={styles['tag-style']}>
-            <Tag tag={props.tag}></Tag>
-          </div>
-          <div className={styles['tag-style']}>
-            <Tag tag={props.tag}></Tag>
-          </div>
-          <div className={styles['tag-style']}>
-            <Tag tag={props.tag}></Tag>
-          </div>
-          <div className={styles['tag-style']}>
-            <Tag tag={props.tag}></Tag>
-          </div>
-          <div className={styles['tag-style']}>
-            <Tag tag={props.tag}></Tag>
-          </div>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
+          <Tag tag={props.tag}></Tag>
         </div>
         <div
           className={`${styles['wrapper-style']} ${styles['commentcount-wrapper']}`}
