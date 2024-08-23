@@ -31,19 +31,20 @@
     margin: 10px 0px 20px 0;
     display: flex;
     flex-direction: row;
-    
-  
-    &.commentcount-wrapper,
-    &.category-wrapper {
-      justify-content: flex-end;
-      margin-left: auto;
-    }
 }
+
+/* SCSS에서의 중첩 부분을 풀어낸 CSS 코드 */
+.wrapper-style.commentcount-wrapper,
+.wrapper-style.category-wrapper {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
 .tag-wrapper {
     justify-content: flex-start;
     gap: 10px;
-    
 }
+
 .paragraph-style {
     display: -webkit-box;
     -webkit-box-orient: vertical;
