@@ -1,0 +1,20 @@
+.smallcardwrap-style {
+    display: flex;
+    margin-top: 60px;
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.smallcard-text {
+    color: #fff;
+    font-size: 18px;
+    width: 114px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-top: 20.5px;
+}
+.smallcards {
+    display: flex;
+    gap: 35px;
+}

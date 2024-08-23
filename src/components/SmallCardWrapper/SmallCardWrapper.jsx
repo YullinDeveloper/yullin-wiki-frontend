@@ -1,19 +1,16 @@
 import React from 'react';
-import {
-  SmallCards,
-  SmallCardWrap,
-  SmallCardText,
-  SmallCardTextDiv,
-} from './style';
-import SmallCard from '../SmallCard/SmallCard';
+import styles from './SmallCardWrapper.module.css';
+import SmallCard from '../SmallCard/SmallCard.jsx';
 
 const SmallCardWrapper = () => {
   return (
-    <SmallCardWrap>
-      <SmallCardTextDiv>
-        <SmallCardText>열린교회에 대해 더 알고 싶다면?</SmallCardText>
-      </SmallCardTextDiv>
-      <SmallCards>
+    <div className={styles['smallcardwrap-style']}>
+      <div>
+        <div className={styles['smallcard-text']}>
+          열린교회에 대해 더 알고 싶다면?
+        </div>
+      </div>
+      <div className={styles['smallcards']}>
         <SmallCard
           span={'열린교회'}
           spanHeader={'공식페이지'}
@@ -29,8 +26,8 @@ const SmallCardWrapper = () => {
           spanHeader={'문화팀'}
           imageUrl={'../images/official_website_icon.svg'}
         ></SmallCard>
-      </SmallCards>
-    </SmallCardWrap>
+      </div>
+    </div>
   );
 };
 

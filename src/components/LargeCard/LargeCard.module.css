@@ -1,0 +1,69 @@
+.large-card-wrap {
+    display: inline-block;
+    background-color: rgba(246, 245, 244, 1);
+    padding: 25px 30px;
+    border-radius: 20px;
+    width: 425px;
+    height: 255px;
+}
+.box-style {
+    display: flex;
+}
+.title-box-style {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.heading1 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    margin: 0;
+}
+.heading2 {
+    color: rgba(139, 102, 102, 1);
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+}
+.wrapper-style {
+    margin: 10px 0px 20px 0;
+    display: flex;
+    flex-direction: row;
+  
+    &.tag-wrapper {
+      justify-content: flex-start;
+    }
+  
+    &.commentcount-wrapper,
+    &.category-wrapper {
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+}
+.tag-style {
+    background-color: rgba(232, 236, 208, 1);
+    padding: 3px 4px;
+    border-radius: 10px;
+    display: flex;
+    &:after {
+        content: '';
+      }
+    
+}
+.paragraph-style {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    max-height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0 5px;
+    margin-right: 0 5px;
+    box-sizing: border-box;
+}
